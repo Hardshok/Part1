@@ -1,0 +1,12 @@
+D:\My C# Course\ConcoleApp_Divider\ConcoleApp_Divider\bin\Debug\ConcoleApp_Divider.exe.config
+D:\My C# Course\ConcoleApp_Divider\ConcoleApp_Divider\bin\Debug\ConcoleApp_Divider.exe
+D:\My C# Course\ConcoleApp_Divider\ConcoleApp_Divider\bin\Debug\ConcoleApp_Divider.pdb
+D:\My C# Course\ConcoleApp_Divider\ConcoleApp_Divider\obj\Debug\ConcoleApp_Divider.csprojResolveAssemblyReference.cache
+D:\My C# Course\ConcoleApp_Divider\ConcoleApp_Divider\obj\Debug\ConcoleApp_Divider.exe
+D:\My C# Course\ConcoleApp_Divider\ConcoleApp_Divider\obj\Debug\ConcoleApp_Divider.pdb
+D:\My C# Cource\ConcoleApp_Divider\ConcoleApp_Divider\bin\Debug\ConcoleApp_Divider.exe.config
+D:\My C# Cource\ConcoleApp_Divider\ConcoleApp_Divider\obj\Debug\ConcoleApp_Divider.exe
+D:\My C# Cource\ConcoleApp_Divider\ConcoleApp_Divider\obj\Debug\ConcoleApp_Divider.pdb
+D:\My C# Cource\ConcoleApp_Divider\ConcoleApp_Divider\bin\Debug\ConcoleApp_Divider.exe
+D:\My C# Cource\ConcoleApp_Divider\ConcoleApp_Divider\bin\Debug\ConcoleApp_Divider.pdb
+D:\My C# Cource\ConcoleApp_Divider\ConcoleApp_Divider\obj\Debug\ConcoleApp_Divider.csprojResolveAssemblyReference.cache
