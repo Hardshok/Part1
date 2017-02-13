@@ -1,0 +1,12 @@
+D:\My C# Course\ArrayMinMax\ArrayMinMax\bin\Debug\ArrayMinMax.exe.config
+D:\My C# Course\ArrayMinMax\ArrayMinMax\obj\Debug\ArrayMinMax.csprojResolveAssemblyReference.cache
+D:\My C# Course\ArrayMinMax\ArrayMinMax\bin\Debug\ArrayMinMax.exe
+D:\My C# Course\ArrayMinMax\ArrayMinMax\bin\Debug\ArrayMinMax.pdb
+D:\My C# Course\ArrayMinMax\ArrayMinMax\obj\Debug\ArrayMinMax.exe
+D:\My C# Course\ArrayMinMax\ArrayMinMax\obj\Debug\ArrayMinMax.pdb
+D:\MyRepoWork\Lesson3\ArrayMinMax\ArrayMinMax\bin\Debug\ArrayMinMax.exe.config
+D:\MyRepoWork\Lesson3\ArrayMinMax\ArrayMinMax\obj\Debug\ArrayMinMax.exe
+D:\MyRepoWork\Lesson3\ArrayMinMax\ArrayMinMax\obj\Debug\ArrayMinMax.pdb
+D:\MyRepoWork\Lesson3\ArrayMinMax\ArrayMinMax\bin\Debug\ArrayMinMax.exe
+D:\MyRepoWork\Lesson3\ArrayMinMax\ArrayMinMax\bin\Debug\ArrayMinMax.pdb
+D:\MyRepoWork\Lesson3\ArrayMinMax\ArrayMinMax\obj\Debug\ArrayMinMax.csprojResolveAssemblyReference.cache
