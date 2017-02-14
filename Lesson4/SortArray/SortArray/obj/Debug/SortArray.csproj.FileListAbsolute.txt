@@ -1,0 +1,6 @@
+D:\MyRepo\Part1\Lesson4\SortArray\SortArray\bin\Debug\SortArray.exe.config
+D:\MyRepo\Part1\Lesson4\SortArray\SortArray\obj\Debug\SortArray.csprojResolveAssemblyReference.cache
+D:\MyRepo\Part1\Lesson4\SortArray\SortArray\bin\Debug\SortArray.exe
+D:\MyRepo\Part1\Lesson4\SortArray\SortArray\bin\Debug\SortArray.pdb
+D:\MyRepo\Part1\Lesson4\SortArray\SortArray\obj\Debug\SortArray.exe
+D:\MyRepo\Part1\Lesson4\SortArray\SortArray\obj\Debug\SortArray.pdb
