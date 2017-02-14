@@ -42,13 +42,6 @@ namespace SortArray
             return iLine;
         }
 
-        static void Swap(int[] argArray, int argIndex1, int argIndex2)
-        {            
-            int iBuffer = argArray[argIndex1];
-            argArray[argIndex1] = argArray[argIndex2];
-            argArray[argIndex2] = iBuffer;            
-        }
-
         static void BubbleSortAscending(int[] argArray) //Bubble sorting - Ascending
         {
             bool b;
@@ -83,5 +76,11 @@ namespace SortArray
             } while (b);
         }
 
+        static void Swap(int[] argArray, int argIndex1, int argIndex2)
+        {
+            int iBuffer = argArray[argIndex1];
+            argArray[argIndex1] = argArray[argIndex2];
+            argArray[argIndex2] = iBuffer;
+        }
     }
 }
