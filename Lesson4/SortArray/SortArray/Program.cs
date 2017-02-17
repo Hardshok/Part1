@@ -23,8 +23,9 @@ namespace SortArray
                 WriteColorLine(ConsoleColor.Yellow, "Modes:\n 1 = Sort Array: Two Methods\n 2 = Stack API with array\n 3 = Queue API with array");
                 Console.Write("Please enter your selection: ");                
                 int iMode = ReadAndValidate(false);
-                switch (iMode) {
-                    case 1: //  TWO SORTONG METHODS FOR ARRAY
+                switch (iMode) {                    
+                    case 1:
+                        #region **** TWO SORTONG METHODS FOR ARRAY ****
                         Console.Clear();
                         WriteColorLine(ConsoleColor.Blue, "*** Sort Array: Two Methods***\n ");
                         int[] userArray = InitArray();
@@ -67,7 +68,9 @@ namespace SortArray
                             bRepeat = IsRepeat("Do you want to sort the initial array again?");
                         } while (bRepeat);
                         break;
-                    case 2: //IMPLEMENT STACK                    
+                    #endregion
+                    case 2:
+                        #region **** IMPLEMENT STACK ****
                         Console.Clear();
                         WriteColorLine(ConsoleColor.Blue, "*** Implement Stack ***\n");
                         string[] userStack = InitStack();
@@ -113,8 +116,9 @@ namespace SortArray
                             bAction = IsRepeat("Do you want to repeat operations with Stask?");
                         } while (bAction);
                         break;
-
-                    case 3: //IMPLEMENT CIRCULAR BUFFER QUEUE
+                    #endregion
+                    case 3:
+                        #region **** IMPLEMENT CIRCULAR BUFFER QUEUE ****
                         Console.Clear();
                         WriteColorLine(ConsoleColor.Blue, "*** Implement Circular Buffer Queue ***\n");                                                
                         string[] userQueue = InitQueue();
@@ -141,6 +145,7 @@ namespace SortArray
                             bRepeatQueue = IsRepeat("Do you want to repeat operations with Queue?");
                         } while (bRepeatQueue);
                         break;
+                    #endregion
                     default:
                         WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, or 3");
                         break;
