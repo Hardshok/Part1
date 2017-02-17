@@ -11,8 +11,7 @@ namespace SortArray
         // 'Tail': start place in array to read
         // 'Head': place to which write new data
         public int Tail, Head;
-        static int Count;
-        Program Program = new Program();
+        static int Count;        
 
         public string[] InitQueue()
         {

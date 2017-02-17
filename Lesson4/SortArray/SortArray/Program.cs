@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace SortArray
 {    
-    public class Program
+    static class Program
     {
-        static int top;
-        static Program MyProgram = new Program();
+        static int top;        
 
         static void Main()
         {            
             Console.Title= "SORT ARRAY METHODS, STACK AMD QUEUE";
             Console.SetWindowSize(80,45);
-            //Program Program = new Program();
-
 
             WriteColorLine(ConsoleColor.Yellow, "Modes:\n 1 = Sort Array: Two Methods\n 2 = Stack API with array\n 3 = Queue API with array"); 
             Console.Write("Please enter your selection: ");
-            int iMode = MyProgram.ReadAndValidate(false);
+            //int iMode = MyProgram.ReadAndValidate(false);
+            int iMode = ReadAndValidate(false);
             switch (iMode) 
             {
                 case 1: //  TWO SORTONG METHODS FOR ARRAY
@@ -33,7 +31,7 @@ namespace SortArray
                         WriteColorLine(ConsoleColor.Yellow, "\nSort method:\n 1 = Bubble sorting by Ascending\n 2 = Bubble sorting by Descending");
                         WriteColorLine(ConsoleColor.Yellow, " 3 = Insertion Sort by Ascending\n 4 = Insertion Sort by Descending");
                         Console.Write("Please enter your selection: ");
-                        int iVariant = MyProgram.ReadAndValidate(false);
+                        int iVariant = ReadAndValidate(false);
                         switch (iVariant)
                         {
                             case 1:
@@ -75,7 +73,7 @@ namespace SortArray
                     do { //user can repeat operations with Stack
                         WriteColorLine(ConsoleColor.Yellow, "\n 1 = Push Stack\n 2 = Pop Stack\n 3 = Pick");
                         Console.Write("Select operation for stack: ");
-                        int iOperation = MyProgram.ReadAndValidate(false);
+                        int iOperation = ReadAndValidate(false);
                         switch (iOperation)
                         {
                             case 1: // Push                               
@@ -112,7 +110,7 @@ namespace SortArray
                     do {  //user can repeat operations with Queue
                         WriteColorLine(ConsoleColor.Yellow, "\n 1 = Enqueue\n 2 = Dequeue\n 3 = IsEmpty\n 4 = IsFull");
                         Console.Write("Select operation for stack: ");
-                        int iOperation = MyProgram.ReadAndValidate(false);                        
+                        int iOperation = ReadAndValidate(false);                        
                         switch (iOperation)
                         {
                             case 1:  // Enqueue                                
@@ -218,7 +216,7 @@ namespace SortArray
 
         // ReadAndValidate():
         // Do ReadLine + validate that the entered value is: not a string; not empty, not out of the integer range; not 0 (if isZeroAllowed=True)
-        public int ReadAndValidate(bool isZeroAllowed = true)
+        public static int ReadAndValidate(bool isZeroAllowed = true)
         {
             int iLine;
             if (!isZeroAllowed) //entering '0' is not allowed
@@ -237,10 +235,10 @@ namespace SortArray
         static int[] InitArray()
         {
             Console.Write("Enter the size of array: ");
-            int[] userArray = new int[MyProgram.ReadAndValidate(false)]; // 'false' arg. means Zero is not allowed as the size of the array
+            int[] userArray = new int[ReadAndValidate(false)]; // 'false' arg. means Zero is not allowed as the size of the array
             Console.WriteLine("\nEnter the array's elements (each number to separate by Enter):");
             for (int iCount = 0; iCount < userArray.Length; iCount++)
-                userArray[iCount] = MyProgram.ReadAndValidate();
+                userArray[iCount] = ReadAndValidate();
             return userArray;
         }
 
@@ -320,7 +318,7 @@ namespace SortArray
         static string[] InitStack()
         {
             Console.Write("Enter the size of Stack: ");
-            string[] Stack = new string[MyProgram.ReadAndValidate(false)]; // 'false' arg. means Zero is not allowed as the size of the array            
+            string[] Stack = new string[ReadAndValidate(false)]; // 'false' arg. means Zero is not allowed as the size of the array            
             top = -1;
             Console.WriteLine(" New Stack is created with size {0}", Stack.Length);
             return Stack;
