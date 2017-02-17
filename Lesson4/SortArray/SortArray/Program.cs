@@ -15,135 +15,148 @@ namespace SortArray
             Console.Title= "SORT ARRAY METHODS, STACK AMD QUEUE";
             Console.SetWindowSize(80,45);
 
-            WriteColorLine(ConsoleColor.Yellow, "Modes:\n 1 = Sort Array: Two Methods\n 2 = Stack API with array\n 3 = Queue API with array"); 
-            Console.Write("Please enter your selection: ");
-            //int iMode = MyProgram.ReadAndValidate(false);
-            int iMode = ReadAndValidate(false);
-            switch (iMode) 
-            {
-                case 1: //  TWO SORTONG METHODS FOR ARRAY
-                    Console.Clear();
-                    WriteColorLine(ConsoleColor.Blue, "*** Sort Array: Two Methods***\n ");
-                    int[] userArray = InitArray();  
-                    bool bRepeat=false;
-                    do
-                    {    // user can select sorting method again
-                        WriteColorLine(ConsoleColor.Yellow, "\nSort method:\n 1 = Bubble sorting by Ascending\n 2 = Bubble sorting by Descending");
-                        WriteColorLine(ConsoleColor.Yellow, " 3 = Insertion Sort by Ascending\n 4 = Insertion Sort by Descending");
-                        Console.Write("Please enter your selection: ");
-                        int iVariant = ReadAndValidate(false);
-                        switch (iVariant)
-                        {
-                            case 1:
-                                WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Ascending***");
-                                int[] Array1 = userArray;
-                                BubbleSortAscending(Array1);
-                                PrintArray(Array1);
-                                break;
-                            case 2:
-                                WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Descending***");
-                                int[] Array2 = userArray;
-                                BubbleSortDescending(Array2);
-                                PrintArray(Array2);
-                                break;
-                            case 3:
-                                WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Ascending***");
-                                int[] Array3 = userArray;
-                                InsertionSortAscending(Array3);
-                                PrintArray(Array3);
-                                break;
-                            case 4:
-                                WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Descending***");
-                                int[] Array4 = userArray;
-                                InsertionSortDescending(Array4);
-                                PrintArray(Array4);
-                                break;
-                            default:
-                                WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, 3, or 4");
-                                break;
-                        }
-                        bRepeat = IsRepeat();
-                    } while (bRepeat);
-                    break;
-                case 2: //IMPLEMENT STACK                    
-                    Console.Clear();
-                    WriteColorLine(ConsoleColor.Blue, "*** Implement Stack ***\n");
-                    string[] userStack = InitStack();
-                    bool bAction = false;
-                    do { //user can repeat operations with Stack
-                        WriteColorLine(ConsoleColor.Yellow, "\n 1 = Push Stack\n 2 = Pop Stack\n 3 = Pick");
-                        Console.Write("Select operation for stack: ");
-                        int iOperation = ReadAndValidate(false);
-                        switch (iOperation)
-                        {
-                            case 1: // Push                               
-                                Console.Write("\nEnter string to PUSH: ");
-                                StackPush(userStack, Console.ReadLine());
-                                StackPrint(userStack);
-                                break;
-                            case 2: // Pop                                
-                                if (!StackIsEmpty())
-                                    Console.WriteLine("\nPOP gets the element:");
-                                WriteColorLine(ConsoleColor.Green, StackPop(userStack));
-                                StackPrint(userStack);
-                                break;
-                            case 3: // Peek
-                                if (!StackIsEmpty())
-                                    Console.WriteLine("\nPEEK gets the top ({0}) element:", top);
-                                WriteColorLine(ConsoleColor.Green, StackPeek(userStack));
-                                StackPrint(userStack);
-                                break;
-                            default:                                
-                                WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, or 3");
-                                break;
-                        }
-                        bAction = IsRepeat();
-                    } while (bAction);
-                    break;
-                
-                case 3: //IMPLEMENT CIRCULAR BUFFER QUEUE
-                    Console.Clear();
-                    WriteColorLine(ConsoleColor.Blue, "*** Implement Circular Buffer Queue ***\n");
-                    Queue Queue = new Queue();
-                    string[] userQueue = Queue.InitQueue();
-                    bool bRepeatQueue = false;
-                    do {  //user can repeat operations with Queue
-                        WriteColorLine(ConsoleColor.Yellow, "\n 1 = Enqueue\n 2 = Dequeue\n 3 = IsEmpty\n 4 = IsFull");
-                        Console.Write("Select operation for stack: ");
-                        int iOperation = ReadAndValidate(false);                        
-                        switch (iOperation)
-                        {
-                            case 1:  // Enqueue                                
-                                
-                                break;
-                            case 2:  // Dequeue
-                                break;
-                            case 3:  // IsFull
-                                break;
-                            case 4:  // IsEmpty
-                                break;
-                            default:
-                                WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, 3, or 4");
-                                break;
-                        }
-                        bRepeatQueue = IsRepeat();
-                    } while (bRepeatQueue) ;
-
+            bool bMainMenu = false;
+            do { // user can back to the main manu
+                Console.Clear();
+                WriteColorLine(ConsoleColor.Yellow, "Modes:\n 1 = Sort Array: Two Methods\n 2 = Stack API with array\n 3 = Queue API with array");
+                Console.Write("Please enter your selection: ");                
+                int iMode = ReadAndValidate(false);
+                switch (iMode)
+                {
+                    case 1: //  TWO SORTONG METHODS FOR ARRAY
+                        Console.Clear();
+                        WriteColorLine(ConsoleColor.Blue, "*** Sort Array: Two Methods***\n ");
+                        int[] userArray = InitArray();
+                        bool bRepeat = false;
+                        do
+                        {    // user can select sorting method again
+                            WriteColorLine(ConsoleColor.Yellow, "\nSort method:\n 1 = Bubble sorting by Ascending\n 2 = Bubble sorting by Descending");
+                            WriteColorLine(ConsoleColor.Yellow, " 3 = Insertion Sort by Ascending\n 4 = Insertion Sort by Descending");
+                            Console.Write("Please enter your selection: ");
+                            int iVariant = ReadAndValidate(false);
+                            switch (iVariant)
+                            {
+                                case 1:
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Ascending***");
+                                    int[] Array1 = userArray;
+                                    BubbleSortAscending(Array1);
+                                    PrintArray(Array1);
+                                    break;
+                                case 2:
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Descending***");
+                                    int[] Array2 = userArray;
+                                    BubbleSortDescending(Array2);
+                                    PrintArray(Array2);
+                                    break;
+                                case 3:
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Ascending***");
+                                    int[] Array3 = userArray;
+                                    InsertionSortAscending(Array3);
+                                    PrintArray(Array3);
+                                    break;
+                                case 4:
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Descending***");
+                                    int[] Array4 = userArray;
+                                    InsertionSortDescending(Array4);
+                                    PrintArray(Array4);
+                                    break;
+                                default:
+                                    WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, 3, or 4");
+                                    break;
+                            }
+                            bRepeat = IsRepeat("Do you want to sort the initial array again?");
+                        } while (bRepeat);
+                        break;
+                    case 2: //IMPLEMENT STACK                    
+                        Console.Clear();
+                        WriteColorLine(ConsoleColor.Blue, "*** Implement Stack ***\n");
+                        string[] userStack = InitStack();
+                        bool bAction = false;
+                        do
+                        { //user can repeat operations with Stack
+                            WriteColorLine(ConsoleColor.Yellow, "\n 1 = Push Stack\n 2 = Pop Stack\n 3 = Pick\n 4 = Stack State (IsEmpty, IsFull)");
+                            Console.Write("Select operation for stack: ");
+                            int iOperation = ReadAndValidate(false);
+                            switch (iOperation)
+                            {
+                                case 1: // Push                               
+                                    Console.Write("\nEnter string to PUSH: ");
+                                    StackPush(userStack, Console.ReadLine());
+                                    StackPrint(userStack);
+                                    break;
+                                case 2: // Pop                                
+                                    if (!StackIsEmpty())
+                                        Console.WriteLine("\nPOP gets the element:");
+                                    WriteColorLine(ConsoleColor.Green, StackPop(userStack));
+                                    StackPrint(userStack);
+                                    break;
+                                case 3: // Peek
+                                    if (!StackIsEmpty())
+                                        Console.WriteLine("\nPEEK gets the top ({0}) element:", top);
+                                    WriteColorLine(ConsoleColor.Green, StackPeek(userStack));
+                                    StackPrint(userStack);
+                                    break;
+                                case 4:
+                                    Console.WriteLine("\nStack state are:");
+                                    if (StackIsEmpty())
+                                        WriteColorLine(ConsoleColor.White, " - Stack is empty");
+                                    else
+                                        WriteColorLine(ConsoleColor.White, " - Stack is not empty");
+                                    if (StackIsFull(userStack))
+                                        WriteColorLine(ConsoleColor.White, " - Stack is full");
+                                    else
+                                        WriteColorLine(ConsoleColor.White, " - Stack is not full");
+                                    break;
+                                default:
+                                    WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, 3, or 4");
+                                    break;
+                            }
+                            bAction = IsRepeat("Do you want to repeat operations with Stask?");
+                        } while (bAction);
                         break;
 
-                default:
-                    WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, or 3");
-                    break;
-            }
-           // bRepeat = IsRepeat();
-            
+                    case 3: //IMPLEMENT CIRCULAR BUFFER QUEUE
+                        Console.Clear();
+                        WriteColorLine(ConsoleColor.Blue, "*** Implement Circular Buffer Queue ***\n");
+                        Queue Queue = new Queue();
+                        string[] userQueue = Queue.InitQueue();
+                        bool bRepeatQueue = false;
+                        do
+                        {  //user can repeat operations with Queue
+                            WriteColorLine(ConsoleColor.Yellow, "\n 1 = Enqueue\n 2 = Dequeue\n 3 = IsEmpty\n 4 = IsFull");
+                            Console.Write("Select operation for stack: ");
+                            int iOperation = ReadAndValidate(false);
+                            switch (iOperation)
+                            {
+                                case 1:  // Enqueue                                
+
+                                    break;
+                                case 2:  // Dequeue
+                                    break;
+                                case 3:  // IsFull
+                                    break;
+                                case 4:  // IsEmpty
+                                    break;
+                                default:
+                                    WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, 3, or 4");
+                                    break;
+                            }
+                            bRepeatQueue = IsRepeat("Do you want to repeat operations with Queue?");
+                        } while (bRepeatQueue);
+                        break;
+                    default:
+                        WriteColorLine(ConsoleColor.Red, "Invalid selection. Please select 1, 2, or 3");
+                        break;
+                }
+                bMainMenu = IsRepeat("Do you want back to MAIN menu?");
+            } while (bMainMenu);
             WriteColorLine(ConsoleColor.White, "Press any key to exit...");
             Console.ReadKey();
-            } 
+        } 
 
                 
         // ************* Array Sorting ***************
-        static void BubbleSortAscending(int[] argArray) //Bubble sorting - Ascending
+        static void BubbleSortAscending(int[] argArray) 
         {
             bool b;
             do { 
@@ -160,7 +173,7 @@ namespace SortArray
             } while (b);
         }
 
-        static void BubbleSortDescending(int[] argArray) //Bubble sorting - Descending
+        static void BubbleSortDescending(int[] argArray) 
         {
             bool b;
             do {
@@ -214,7 +227,7 @@ namespace SortArray
             argArray[argIndex2] = iBuffer;
         }
 
-        // ReadAndValidate():
+        // ReadAndValidate() method:
         // Do ReadLine + validate that the entered value is: not a string; not empty, not out of the integer range; not 0 (if isZeroAllowed=True)
         public static int ReadAndValidate(bool isZeroAllowed = true)
         {
@@ -256,13 +269,13 @@ namespace SortArray
         static void WriteColorLine(ConsoleColor sColor, string sMessage)
         {
             Console.ForegroundColor = sColor;
-            Console.WriteLine(sMessage);
+            Console.WriteLine(sMessage);            
             Console.ResetColor();
         }
 
-        static bool IsRepeat () //Service function
+        static bool IsRepeat (string message) //Service function
         {            
-            WriteColorLine(ConsoleColor.White, "\nDo you want to repeat operations? Y/N");
+            WriteColorLine(ConsoleColor.White, "\n"+message+" Y/N");
             string sRepeat = Console.ReadLine();
             bool bRepeat = (sRepeat == "y" || sRepeat == "Y") ? true : false;
             return bRepeat;

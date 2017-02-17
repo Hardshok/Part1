@@ -8,8 +8,8 @@ namespace SortArray
 {
     public class Queue
     {
-        // 'Tail': start place in array to read
-        // 'Head': place to which write new data
+        /* 'Tail': start place in array to read
+           'Head': place to which write new data */
         public int Tail, Head;
         static int Count;        
 
