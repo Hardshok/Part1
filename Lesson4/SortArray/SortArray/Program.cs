@@ -18,7 +18,7 @@ namespace SortArray
             Console.SetWindowSize(80,45);
 
             bool bMainMenu = true;
-            do { // user can back to the main manu
+            do { // user can back to the main menu
                 Console.Clear();
                 WriteColorLine(ConsoleColor.Yellow, "Modes:\n 1 = Sort Array: Two Methods\n 2 = Stack API with array\n 3 = Queue API with array\n 4 = EXIT");
                 Console.Write("Please enter your selection: ");
