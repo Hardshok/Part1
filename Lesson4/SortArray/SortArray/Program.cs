@@ -138,7 +138,7 @@ namespace SortArray
                                     break;
                                 case 2:  // Dequeue                                                                                                           
                                     if (Dequeue(userQueue, out queueItem)) {                                        
-                                        Console.Write("\nThe element taken from queue is: ");
+                                        Console.Write("\nThe element takken from queue is: ");
                                         WriteColorLine(ConsoleColor.Green, queueItem);
                                         PrintBuffer(userQueue);
                                     }
