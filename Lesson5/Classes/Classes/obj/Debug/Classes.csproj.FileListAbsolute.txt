@@ -1,0 +1,12 @@
+D:\MyRepo\Part1\Lesson5\Classes\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+D:\MyRepo\Part1\Lesson5\Classes\Classes\bin\Debug\MyClasses.exe.config
+D:\MyRepo\Part1\Lesson5\Classes\Classes\bin\Debug\MyClasses.exe
+D:\MyRepo\Part1\Lesson5\Classes\Classes\bin\Debug\MyClasses.pdb
+D:\MyRepo\Part1\Lesson5\Classes\Classes\obj\Debug\MyClasses.exe
+D:\MyRepo\Part1\Lesson5\Classes\Classes\obj\Debug\MyClasses.pdb
+D:\MyRepoWork\Lesson5\Classes\Classes\bin\Debug\MyClasses.exe.config
+D:\MyRepoWork\Lesson5\Classes\Classes\obj\Debug\MyClasses.exe
+D:\MyRepoWork\Lesson5\Classes\Classes\obj\Debug\MyClasses.pdb
+D:\MyRepoWork\Lesson5\Classes\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+D:\MyRepoWork\Lesson5\Classes\Classes\bin\Debug\MyClasses.exe
+D:\MyRepoWork\Lesson5\Classes\Classes\bin\Debug\MyClasses.pdb
