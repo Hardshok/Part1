@@ -36,28 +36,24 @@ namespace SortArray
                             switch (ReadAndValidate(false))
                             {
                                 case 1:
-                                    WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Ascending***");
-                                    int[] Array1 = userArray;
-                                    BubbleSortAscending(Array1);
-                                    PrintArray(Array1);
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Ascending***");                                    
+                                    BubbleSortAscending(userArray);
+                                    PrintArray(userArray);
                                     break;
                                 case 2:
-                                    WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Descending***");
-                                    int[] Array2 = userArray;
-                                    BubbleSortDescending(Array2);
-                                    PrintArray(Array2);
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Bubble sorting by Descending***");                                    
+                                    BubbleSortDescending(userArray);
+                                    PrintArray(userArray);
                                     break;
                                 case 3:
-                                    WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Ascending***");
-                                    int[] Array3 = userArray;
-                                    InsertionSortAscending(Array3);
-                                    PrintArray(Array3);
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Ascending***");                                    
+                                    InsertionSortAscending(userArray);
+                                    PrintArray(userArray);
                                     break;
                                 case 4:
-                                    WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Descending***");
-                                    int[] Array4 = userArray;
-                                    InsertionSortDescending(Array4);
-                                    PrintArray(Array4);
+                                    WriteColorLine(ConsoleColor.Blue, "\n***Insertion sort by Descending***");                                    
+                                    InsertionSortDescending(userArray);
+                                    PrintArray(userArray);
                                     break;
                                 case 5:
                                     bRepeat = false;
