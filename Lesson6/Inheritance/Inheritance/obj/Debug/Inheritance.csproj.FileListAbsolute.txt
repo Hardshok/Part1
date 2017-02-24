@@ -1,0 +1,11 @@
+D:\MyRepo\Part1\Lesson6\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+D:\MyRepo\Part1\Lesson6\Inheritance\Inheritance\obj\Debug\Inheritance.csprojResolveAssemblyReference.cache
+D:\MyRepo\Part1\Lesson6\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+D:\MyRepo\Part1\Lesson6\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
+D:\MyRepo\Part1\Lesson6\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+D:\MyRepo\Part1\Lesson6\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
+D:\MyRepoWork\Lesson6\Inheritance\Inheritance\bin\Debug\Inheritance.exe.config
+D:\MyRepoWork\Lesson6\Inheritance\Inheritance\obj\Debug\Inheritance.exe
+D:\MyRepoWork\Lesson6\Inheritance\Inheritance\obj\Debug\Inheritance.pdb
+D:\MyRepoWork\Lesson6\Inheritance\Inheritance\bin\Debug\Inheritance.exe
+D:\MyRepoWork\Lesson6\Inheritance\Inheritance\bin\Debug\Inheritance.pdb
